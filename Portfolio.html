@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Sarthak Tuteja</title>
+  <title>Bootstrap Theme Simply Me</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,8 +19,8 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-      background-color: #000; /* Green */
-      color: #fff;
+      background-color: #fff; /* Green */
+      color: #000;
 	/*  background-image:url('header-bg.jpg');
 	background-size:cover; */
 
@@ -35,7 +35,7 @@
       color: #555555;
   }
   .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
+      background-color: #000; /* Black Gray */
       color: #fff;
   }
   .container-fluid {
@@ -120,6 +120,9 @@ padding:200px;
 
 
 }
+
+
+
 }
   </style>
 </head>
@@ -138,8 +141,8 @@ padding:200px;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#first">Me?</a></li>
-        <li><a href="#second">Work</a></li>
+        <li><a href="#first">Top</a></li>
+        <li><a href="#second">Me?</a></li>
         <li><a href="#third">Contact</a></li>
       </ul>
     </div>
@@ -159,7 +162,9 @@ padding:200px;
   <h3 class="margin">What Am I?</h3>
  
 
-I am a passionate self-taught developer who fell in love with programming and creating websites/apps two years ago. Since then, I've been experimenting, creating, and learning everything that I can about web development. Nothing compares to the feeling of creating something from nothing.<br><br>
+I am a passionate self-taught developer who fell in love with programming and creating websites/apps two years ago. Since then, I've been experimenting, creating, and 
+
+learning everything that I can about web development. Nothing compares to the feeling of creating something from nothing.<br><br>
 
 When I'm not hacking away at code, I am spending time with my friends, roaming around the city, or occasionallyworking out.<br><br>
 
@@ -167,41 +172,12 @@ I am currently available for any small freelance projects, as well as full time 
  
 </div>
 
-<div class='fourth'>
-<div class='container'>
-<div class="row">
-<div class="col-md-4">
-<i class="fa fa-html5 social-icon" aria-hidden="true"></i>
 
-</div>
-
-<div class="col-md-4">
-<i class="fa fa-html5 social-icon" aria-hidden="true"></i>
-
-</div>
-
-<div class="col-md-4">
-<i class="fa fa-html5 social-icon" aria-hidden="true"></i>
-
-</div>
-
-
-<div class="col-md-4">
-<i class="fa fa-html5 social-icon" aria-hidden="true"></i>
-
-</div>
-</div>
-
-
-</div>
-
-
-</div>
 
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center" id='third'>    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 >Where To Find Me?</h3><br>
   <div class="row">
     <div class="col-sm-4">
       <p><a href="https://www.linkedin.com/in/sarthak-tuteja-846310bb/"><i class="fa fa-linkedin-square social-icon in" aria-hidden="true"></i></a></p>
@@ -222,7 +198,7 @@ I am currently available for any small freelance projects, as well as full time 
 <footer class="container-fluid bg-4">
 <div class="row">
 <div class='col-md-6 col-xs-6'>
-  <p class='left'>Sarthak Tuteja</p>
+  <p class='left'>Sarthak tuteja</p>
 </div>
 <div class='col-md-6 col-xs-6'>
  <p class='right'><i class="fa fa-copyright"></i> 2018</p>
@@ -245,31 +221,60 @@ $('.navbar').css({
 $('.navbar').css('background','transparent');
 }
 
-if ($(window).scrollTop() >= 350 && $(window).scrollTop() <= 950 ) {
+
+if ($(window).scrollTop() >= 350 && $(window).scrollTop() <= 1250 ) {
 $('#second').css({
-'background' :'#000', 
-'color' : '#fff',
+'background' :'#fff', 
+'color' : '#000',
 'transition': '1s',
-'padding': '200px',
 
 
 });
-} else {
+} 
+
+
+else {
 $('#second').css({
 'background' :'#000', 
 'color' : '#000',
-'transition': '0.2s',
-'padding': '50px',
+'transition': '1s',
+
+'padding' : '50px',
+
 });
 }
 
 
-if ($(window).scrollTop() >= 1050) {
-$('#third').css({
+if($(window).width() >= 700){
+if ($(window).scrollTop() >= 350 && $(window).scrollTop() <= 950 ) {
+$('#second').css({
 'background' :'#fff', 
 'color' : '#000',
 'transition': '1s',
-'padding': '200px',
+
+'padding' : '200px',
+
+});
+} 
+
+
+else {
+$('#second').css({
+'background' :'#000', 
+'color' : '#000',
+'transition': '1s',
+
+'padding' : '50px',
+
+});
+}
+if ($(window).scrollTop() >= 1050) {
+$('#third').css({
+'background' :'#fff', 
+'color' : '000',
+'transition': '1s',
+'padding' : '200px',
+
 
 });
 } else {
@@ -277,7 +282,32 @@ $('#third').css({
 'background' :'#000', 
 'color' : '#000',
 'transition': '0.5s',
-'padding': '100px',
+'padding' : '50px',
+
+
+});
+}
+
+
+}
+
+if ($(window).scrollTop() >= 1050) {
+$('#third').css({
+'background' :'#fff', 
+'color' : '000',
+'transition': '1s',
+
+
+
+
+});
+} else {
+$('#third').css({
+'background' :'#000', 
+'color' : '#000',
+'transition': '0.5s',
+
+
 
 });
 }
